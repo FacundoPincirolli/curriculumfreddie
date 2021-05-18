@@ -1,0 +1,162 @@
+/*generales*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400&display=swap');
+
+html{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+/* cajas de columnas*/
+
+.contenedor{
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+    margin: auto;
+}
+
+.columnadatos{
+    width: 25%;
+    background-color:darkseagreen;
+    padding: 10px;
+}
+
+.contenedorinfo{
+    width: 25%;
+    padding: 10px;
+}
+
+
+/* clases*/
+
+.titulos{
+    font-size: 20px;
+    font-weight:600
+}
+
+.subtitulos{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.imgfreddie{
+    margin: auto;
+    width: 90%;
+}
+
+.barra{
+    width: 100%;
+    height: 10px;
+    background-color: green;
+    
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.compe{
+    line-height: 30px;
+    
+}
+
+.numeros{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction:row;
+}
+
+.borde{
+    border-bottom: gainsboro 2px double; 
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+
+.imgredes{
+    width: 40%;
+}
+
+
+/* Disp. Grandes / 961-1200 */
+@media screen and (min-width:961px) and (max-width:1200px){
+	
+	
+}
+
+/* Disp. Medianos / 561-960 */
+@media screen and (min-width:561px) and (max-width:960px){
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.columnadatos{
+    margin: auto;
+    width: 100%;
+}
+
+.contenedorinfo{
+    margin: auto;
+    width: 100%;
+}
+
+.imgfreddie{
+    width: 90%;
+    margin:auto;
+}
+
+.imgredes{
+    width: 20%;
+}
+
+}
+
+
+
+/* Disp. Pequeños / 0-560 */
+@media (max-width:560px){
+	
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .columnadatos{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .contenedorinfo{
+        margin: auto;
+        width: 100%;
+    }
+    
+    .imgfreddie{
+        width: 90%;
+        margin:auto;
+    }
+
+    .imgredes{
+        width: 25%;
+    }
+
+}
